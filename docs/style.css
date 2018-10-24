@@ -1,0 +1,66 @@
+html, body
+{
+    
+	padding:0px;
+	margin:0px;
+	transition: 0.4s;
+	box-sizing: border-box;
+	
+}
+
+
+#contain{
+	width:  calc(100% - 13px);
+	height:  calc(100% - 13px);
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 8% auto 30px;	
+	grid-template-areas: 
+						"top1 top2 top3"
+						"mid1 mid2 mid3"
+						"bot1 bot2 bot3";	
+						
+	grid-column-gap: 0px;
+	grid-row-gap:5px;
+	box-sizing: border-box;
+	margin:5px;
+	position: fixed;
+	onerfloe:hidden;
+
+}
+#t1{
+	grid-area:top1;
+	background-color:green;
+}
+#t2{
+	grid-area:top2;
+	background-color:pink;
+}
+#t3{
+	grid-area:top3;
+	background-color:navy;
+}
+#m1{
+	grid-area:mid1;
+	background-color:purple;
+}
+#m2{
+	grid-area:mid2;
+	background-color:red;
+}
+#m3{
+	grid-area:mid3;
+	background-color:blue;
+}
+#b1{
+	grid-area:bot1;
+	background-color:orange;
+}
+#b2{
+	grid-area:bot2
+	background-color:yellow;
+}
+#b3{
+	grid-area:bot3;
+	background-color:black;
+}
