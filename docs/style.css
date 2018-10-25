@@ -5,13 +5,15 @@ html, body
 	margin:0px;
 	transition: 0.4s;
 	box-sizing: border-box;
-	
+	background-image: url("bg.png");
+	position:relative;
 }
 
 
 #contain{
-	width:  calc(100%);
-	height:  calc(100%);
+	width:100%;
+    height:100%;
+  
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: 50px auto auto auto;	
@@ -25,8 +27,8 @@ html, body
 	grid-row-gap:0px;
 	box-sizing: border-box;
 	margin:0px;
-	position: fixed;
-	onerfloe:hidden;
+	position:fixed;
+	overflow:hidden;
 
 }
 
@@ -42,7 +44,7 @@ html, body
 	min-width:15%;
 	background-color:black;
 	border:0px;
-	
+	outline: none;
 	
 }
 #pic{
@@ -57,12 +59,16 @@ ul{
 	padding:0px;
 	display:none;
 }
+#mu{
+	display:none;
+}
 .bu{
 	width:100%;
 	height:50px;
 	border:0px;
 	margin:0px;
 	padding:0px;
+	
 }
 .bu:hover{
 	background-color:pink;
@@ -73,6 +79,18 @@ ul{
 #topper2{
 	grid-area:topper2;
 	background-color:black;
+	color:white;
+	text-align:center;
+	box-sizing: border-box;
+	paddng:0px;
+	
+}
+#topper2 h2 {
+	border: 5px solid white;
+	margin: 5px auto 0 auto;	
+	box-sizing: border-box;
+	width:40%;
+	
 }
 #topper3{
 	grid-area:topper3;
@@ -83,38 +101,38 @@ ul{
 }
 #t1{
 	grid-area:top1;
-	background-color:green;
+	
 	
 }
 #t2{
 	grid-area:top2;
-	background-color:pink;
+	position:relative;
 }
 #t3{
 	grid-area:top3;
-	background-color:navy;
+	
 }
 #m1{
 	grid-area:mid1;
-	background-color:purple;
+	
 }
 #m2{
 	grid-area:mid2;
-	background-color:red;
+	
 }
 #m3{
 	grid-area:mid3;
-	background-color:blue;
+
 }
 #b1{
 	grid-area:bot1;
-	background-color:orange;
+	
 }
 #b2{
-	grid-area:bot2
-	background-color:yellow;
+	grid-area:bot2;
+	
 }
 #b3{
 	grid-area:bot3;
-	background-color:black;
+	
 }
